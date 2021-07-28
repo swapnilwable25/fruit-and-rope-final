@@ -10,6 +10,8 @@ var ball;
 var slingShot;
 var fruit;
 function preload(){
+   backgroundImg = loadImage("background.png");
+
  fruit=loadImage("melon.png");
  g=loadImage("basket.png")
 }
@@ -30,7 +32,7 @@ function setup() {
 
 }
 function draw() {
-  background(56,44,44); 
+  background(backgroundImg); 
  
   //Engine.update(engine);
   //text(mouseX + ',' + mouseY, 10, 15);
